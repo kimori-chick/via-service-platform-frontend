@@ -1,6 +1,6 @@
 import styles from '../../../styles/Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen, faCalendar, faHouse, faMagnifyingGlass, faMapLocationDot, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 export const Header = () => {
@@ -8,7 +8,11 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.header_top}>
         <a href="/" className={styles.header_logo}>
-          <img src="/logo.png" alt="ロゴ" />
+          <img
+            src="../../../../public/images/sample_logo.jpg"
+            className={styles.header_logoImage}
+            alt="ロゴ"
+          />
         </a>
         <div  className={styles.header_searchInputWrapper}>
           <input className={styles.header_searchInput} placeholder="検索" />
@@ -25,6 +29,7 @@ export const Header = () => {
                 icon={faEnvelope}
                 className={styles.header_mailIcon}
               />
+              <span className={styles.header_mailNotice}>8</span>
             </button>
             <button className={styles.header_accountButton}>
               <img
@@ -37,11 +42,51 @@ export const Header = () => {
       </div>
       <nav className={styles.header_nav}>
         <ul className={styles.header_nav_ul}>
-          <li className={styles.header_nav_item}>ホーム</li>
-          <li className={styles.header_nav_item}>マイプラン</li>
-          <li className={styles.header_nav_item}>イベント</li>
-          <li className={styles.header_nav_item}>マップ</li>
-          <li className={styles.header_nav_item}>マイページ</li>
+            <li className={styles.header_nav_item}>
+              <a href="#">
+                <FontAwesomeIcon
+                  icon={faHouse}
+                  className={styles.header_navIcon}
+                />
+                ホーム
+              </a>
+            </li>
+          <li className={styles.header_nav_item}>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                className={styles.header_navIcon}
+              />
+              マイプラン
+            </a>
+          </li>
+          <li className={styles.header_nav_item}>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faCalendar}
+                className={styles.header_navIcon}
+              />
+              イベント
+            </a>
+          </li>
+          <li className={styles.header_nav_item}>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMapLocationDot}
+                className={styles.header_navIcon}
+              />
+              マップ
+            </a>
+          </li>
+          <li className={styles.header_nav_item}>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faUser}
+                className={styles.header_navIcon}
+              />
+              マイページ
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

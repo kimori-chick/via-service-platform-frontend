@@ -2,6 +2,7 @@
   width: 100%;
   height: 140px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff874;
 }
 
 .header_top {
@@ -20,12 +21,17 @@
   background-color: #9a9a9a;
 }
 
+.header_logoImage {
+  width: 100%;
+  height: 100%;
+}
+
 .header_searchInputWrapper {
   position: absolute;
   content: none;
-  max-width: 240px;
-  width: 30%;
-  height: 30px;
+  max-width: 380px;
+  width: calc(100% - 480px);
+  height: 40px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -35,9 +41,13 @@
   width: 100%;
   height: 100%;
   padding: 4px 20px;
-  border: 2px solid #000;
+  border: 3px solid #aeaeae;
   border-radius: 99px;
   box-sizing: border-box;
+}
+
+.header_searchInput:placeholder-shown {
+  color: #aeaeae;
 }
 
 .header_searchIcon {
@@ -47,6 +57,7 @@
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
+  color: #aeaeae;
   pointer-events: none;
 }
 
@@ -67,9 +78,24 @@
 .header_mailButton {
   width: 52px;
   height: 36px;
-  background-color: #FFF;
+  background-color: transparent;
   font-size: 12px;
   border: none;
+  position: relative;
+}
+
+.header_mailNotice {
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  background-color: #f07b7b;
+  border-radius: 99px;
 }
 
 .header_mailIcon {
@@ -110,8 +136,31 @@
 }
 
 .header_nav_item {
-  width: calc(30% - 32px);
+  width: calc(25% - 32px);
+}
+
+.header_nav_item:hover {
+  opacity: 0.4;
+}
+
+.header_nav_item a {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ca8242;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header_nav_item.is_selected a {
+  color: #ff8c00;
+}
+
+.header_navIcon {
+  width: 18px;
+  height: 18;
 }
