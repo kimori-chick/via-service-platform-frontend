@@ -1,4 +1,7 @@
 import styles from '../../../styles/Header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 export const Header = () => {
   return (
@@ -7,11 +10,22 @@ export const Header = () => {
         <a href="/" className={styles.header_logo}>
           <img src="/logo.png" alt="ロゴ" />
         </a>
-        <input className={styles.header_searchInput} placeholder="検索..." />
+        <div  className={styles.header_searchInputWrapper}>
+          <input className={styles.header_searchInput} placeholder="検索" />
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className={styles.header_searchIcon}
+          />
+        </div>
         <div className={styles.header_userMenu}>
           <button className={styles.header_loginButton}>ログイン</button>
           <div className={styles.header_accountMenu}>
-            <button className={styles.header_mailButton}>メール</button>
+            <button className={styles.header_mailButton}>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className={styles.header_mailIcon}
+              />
+            </button>
             <button className={styles.header_accountButton}>
               <img
                className={styles.header_accountImage}
