@@ -4,8 +4,8 @@ import BaseLayout from '../../components/layouts/BaseLayout';
 const Home = () => {
   return (
     <BaseLayout title="ホーム | My App" description="これはホームページの説明です。">
-      <div>ホーム</div>
       <Header />
+      <h1>ホーム</h1>
     </BaseLayout>
   );
 };
