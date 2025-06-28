@@ -1,0 +1,119 @@
+.leftMenuWrapper {
+  width: 320px;
+  padding: 40px 24px;
+  border-radius: box-sizing;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.leftMenu_section {
+  width: 100%;
+  border-radius: 14px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.leftMenu_section_title {
+  font-size: 18px;
+  padding-left: 8px;
+  border-left: 2px solid #dab007;
+  vertical-align: middle;  
+}
+
+.leftMenu_schedulePlan_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftMenu_schedulePlan_item {
+  padding: 20px 0;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.leftMenu_schedulePlan_item:last-child {
+  padding-bottom: 12px;
+  border-bottom: none;
+}
+
+.leftMenu_schedulePlan_item a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+.leftMenu_schedulePlan_basicInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.leftMenu_schedulePlan_date {
+  font-size: 14px;
+  color: #818181;
+}
+
+.leftMenu_schedulePlan_place {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.leftMenu_schedulePlan_title {
+  font-size: 18px;
+}
+
+.leftMenu_recommend_list {
+  width: 100%;
+}
+
+.leftMenu_recommend_item {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.leftMenu_recommend_item:last-child {
+  border: none;
+}
+
+.leftMenu_recommend_link {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.leftMenu_recommend_thumbnail {
+  display: block;
+  width: 30%;
+  aspect-ratio: 4 / 3;
+  background-color: #aaa;
+  border-radius: 12px;
+}
+
+.leftMenu_recommend_info {
+  width: calc(100% - 12px - 30%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leftMenu_recommend_tagList {
+  display: flex;
+  gap: 8px 4px;
+}
+
+.leftMenu_recommend_tagItem {
+  padding: 4px 6px;
+  border-radius: 8px;
+  text-align: center;
+  vertical-align: center;
+  background-color: #777619;
+  font-size: 12px;
+  color: #FFF;
+}

@@ -1,4 +1,4 @@
-import styles from '../../../styles/Header.module.css';
+import styles from '../../../styles/modules/Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faCalendar, faHouse, faMagnifyingGlass, faMapLocationDot, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'

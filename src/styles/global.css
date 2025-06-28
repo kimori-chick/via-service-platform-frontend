@@ -26,3 +26,7 @@ button, a {
 h1 {
   min-height: 100vh;
 }
+
+.home_wrapper {
+  display: flex;
+}
