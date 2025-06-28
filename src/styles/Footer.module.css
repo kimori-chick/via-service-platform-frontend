@@ -1,0 +1,72 @@
+.footer {
+  width: 100%;
+  background-color: #717171;
+  color: #FFF;
+  padding: 120px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_siteMap {
+  max-width: 1020px;
+  width: calc(100% - 220px);
+  margin: 0 0 90px;
+  display: flex;
+}
+
+.footer_siteMap_navItem {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: calc(100% / 5);
+}
+
+.footer_siteMap_navItem a {
+  width: 100%;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.footer_siteMap_navItem li:first-child a {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.footer_about {
+  width: 1020px;
+  display: flex;
+  margin: 0 0 60px;
+}
+
+.footer_about li {
+  width: calc(100% / 5);
+}
+
+.footer_about li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+}
+
+.footer_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer_serviceName {
+  font-size: 24px;
+}
+
+.footer_copyRight {
+  font-size: 12px;
+}
